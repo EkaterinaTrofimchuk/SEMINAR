@@ -4,3 +4,5 @@
 
 
 *Home001Task002 * Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел [блок-схема](seminar/../Home001Task002/example.drawio.png) | [код](seminar/../Home001Task002/Program.cs)
+
+*Home001Task003 * Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным [блок-схема](seminar/../Home001Task003/example.drawio.png) | [код](seminar/../Home001Task003/Program.cs)
