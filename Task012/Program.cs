@@ -77,7 +77,7 @@ string Print(int[] f)
     int t = f[i];
     if (f[i] == 0) continue;
     if (f[i] < 0) { output += " - "; }
-    else if (i != 0) { output += " + "; }
+    else if (i != 0 && (i-1)!=0) { output += " + "; }
     //else { output += "  "; }
 
     if (t < 0) t = -t;
@@ -93,18 +93,18 @@ string Print(int[] f)
   return output;
 }
 
-//умножение
-int[] Multi (int[]f, int []g)
-{
-int size = f.Length + g.Length;
-int[] result = new int[size];
-for (int i=0; i<f.Length; i++)
-    for (int j=0; j<g.Length;j++)
-    {
-        result[i+j] += f[i]*g[j];
-    }
-return result;
-}
+// //умножение
+// int[] Multi (int[]f, int []g)
+// {
+// int size = f.Length + g.Length;
+// int[] result = new int[size];
+// for (int i=0; i<f.Length; i++)
+//     for (int j=0; j<g.Length;j++)
+//     {
+//         result[i+j] += f[i]*g[j];
+//     }
+// return result;
+// }
 
 //          0  1  2  3  4  5  6  7  ......... N
 
@@ -123,11 +123,10 @@ Console.Write("Сумма многочленов равна ");
 Console.WriteLine(Print(s));
 Console.Write("Разность многочленов равна ");
 Console.WriteLine(Print(d));
-int[] m = Multi(f,g);
-Console.Write("Произведение многочленов равна ");
-Console.WriteLine(Print(m));
+// int[] m = Multi(f,g);
+// Console.Write("Произведение многочленов равна ");
+// Console.WriteLine(Print(m));
 //f(x) = a0*x^0 + a1*x^1 + a2*x^2 + a3*x^3 + a4*x^4 + ....+ aN*x^N
-
 
 
 System.Console.WriteLine();
