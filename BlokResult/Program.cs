@@ -16,3 +16,18 @@ void SecondArrayWithIF(string[] array, string[] arrayNew)
         }
     }
 }
+
+// метод печати
+string PrintGood(int[] numbers)
+  {
+    int size = numbers.Length;
+    int i = 0;
+    string result = "[ ";
+
+    while (i < size)
+    {
+      result += ($"{numbers[i],3} ");
+      i++;
+    }
+    return result + "]";
+  }
