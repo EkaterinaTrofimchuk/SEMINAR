@@ -4,7 +4,7 @@ string[] array = new string[] {"Hello", "2", "world", ":-)"};
 string[] arrayNew = new string[array.Length];
 
 //метод создания нового массива
-void SecondArrayWithIF(string[] array, string[] arrayNew)
+void NewArray(string[] array, string[] arrayNew)
 {
     int count = 0;
     for (int i = 0; i < array.Length; i++)
@@ -18,7 +18,7 @@ void SecondArrayWithIF(string[] array, string[] arrayNew)
 }
 
 // метод печати
-string PrintGood(int[] numbers)
+string PrintGood(string[] numbers)
   {
     int size = numbers.Length;
     int i = 0;
@@ -26,8 +26,11 @@ string PrintGood(int[] numbers)
 
     while (i < size)
     {
-      result += ($"{numbers[i],3} ");
+      result += ($"{numbers[i],3} , ");
       i++;
     }
     return result + "]";
   }
+
+NewArray(array, arrayNew);
+Console.WriteLine(PrintGood(arrayNew));
